@@ -8,6 +8,9 @@ const nextConfig = {
   output: isStaticExport ? 'export' : 'standalone', // Standalone for server deploys, export for GitHub Pages
   basePath: isStaticExport ? `/${repoName}` : undefined,
   assetPrefix: isStaticExport ? `/${repoName}/` : undefined,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isStaticExport ? `/${repoName}` : '',
+  },
   images: {
     domains: ['avatars.githubusercontent.com', 'github.com'],
     unoptimized: isStaticExport,

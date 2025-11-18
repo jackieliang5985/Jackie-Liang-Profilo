@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react'
 import Image from 'next/image'
+import { assetPath } from '@/lib/assetPath'
 
 interface LoadingScreenProps {
   onComplete: () => void
@@ -74,7 +75,7 @@ export default function LoadingScreen({ onComplete, isTransitioning = false }: L
           {/* Photo container */}
           <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary-500/50 dark:border-primary-400/50 shadow-2xl">
             <Image
-              src="/images/jackie-liang-headshot.jpg"
+              src={assetPath('/images/jackie-liang-headshot.jpg')}
               alt="Jackie Liang"
               fill
               className="object-cover"

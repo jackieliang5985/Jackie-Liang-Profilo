@@ -7,6 +7,7 @@ import { Project } from '@/lib/github'
 import { formatDistanceToNow } from 'date-fns'
 import { contactOnlyRepos } from '@/data/contactOnlyRepos'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+import { assetPath } from '@/lib/assetPath'
 
 interface ProjectsClientProps {
   initialProjects: Project[]
@@ -392,8 +393,8 @@ function ProjectModal({
           {project.name.toLowerCase() === 'astro' && (
             <div className="mb-6">
               <div className="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-lg">
-                <Image
-                  src="/images/bramhacks-2025-team-coolie.jpg"
+                  <Image
+                    src={assetPath('/images/bramhacks-2025-team-coolie.jpg')}
                   alt="Team Coolie celebrating the BramHacks 2025 2nd-place finish"
                   width={1200}
                   height={800}

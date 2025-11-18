@@ -2,6 +2,7 @@
 
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import Image from 'next/image'
+import { assetPath } from '@/lib/assetPath'
 
 export default function About() {
   const { ref, isVisible } = useScrollAnimation()
@@ -32,7 +33,7 @@ export default function About() {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary-500/20 via-purple-500/20 to-primary-500/20 blur-3xl animate-pulse" />
               <div className="relative w-full h-full rounded-2xl overflow-hidden border-4 border-primary-500/30 dark:border-primary-400/30 shadow-2xl">
                 <Image
-                  src="/images/jackie-liang-fullbody.jpg"
+                  src={assetPath('/images/jackie-liang-fullbody.jpg')}
                   alt="Jackie Liang"
                   fill
                   className="object-cover object-top"
@@ -114,8 +115,8 @@ export default function About() {
 
             <div className="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-2xl border border-slate-200/60 dark:border-slate-800/60 bg-white/70 dark:bg-slate-900/60 shadow-sm">
               <div className="relative w-24 h-24 rounded-full overflow-hidden border border-primary-500/40 shadow-md">
-                <Image
-                  src="/images/utoronto-coa.svg.png"
+        <Image
+          src={assetPath('/images/utoronto-coa.svg.png')}
                   alt="University of Toronto Crest"
                   fill
                   className="object-contain p-4"

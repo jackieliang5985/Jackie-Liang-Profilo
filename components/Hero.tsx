@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
+import { assetPath } from '@/lib/assetPath'
 
 type HeroPhase = 'loading' | 'transition' | 'done'
 
@@ -174,8 +175,8 @@ export default function Hero({ phase = 'loading', progress = 0 }: HeroProps) {
               
             {/* Photo container */}
             <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary-500/50 dark:border-primary-400/50 shadow-2xl">
-              <Image
-                src="/images/jackie-liang-headshot.jpg"
+                <Image
+                  src={assetPath('/images/jackie-liang-headshot.jpg')}
                 alt="Jackie Liang"
                 fill
                 className="object-cover"
@@ -226,8 +227,8 @@ export default function Hero({ phase = 'loading', progress = 0 }: HeroProps) {
           >
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary-500 via-purple-500 to-primary-500 opacity-50 blur-2xl" />
             <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary-500/50 dark:border-primary-400/50 shadow-2xl">
-              <Image
-                src="/images/jackie-liang-headshot.jpg"
+            <Image
+              src={assetPath('/images/jackie-liang-headshot.jpg')}
                 alt="Jackie Liang"
                 fill
                 className="object-cover"
@@ -255,8 +256,8 @@ export default function Hero({ phase = 'loading', progress = 0 }: HeroProps) {
             
             {/* Photo container */}
             <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-primary-500/50 dark:border-primary-400/50 shadow-2xl ring-4 ring-primary-500/20">
-              <Image
-                src="/images/jackie-liang-headshot.jpg"
+            <Image
+              src={assetPath('/images/jackie-liang-headshot.jpg')}
                 alt="Jackie Liang"
                 fill
                 className="object-cover"

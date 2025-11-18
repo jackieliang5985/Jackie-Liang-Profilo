@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import { useTheme } from 'next-themes'
+import { assetPath } from '@/lib/assetPath'
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -69,7 +70,7 @@ export default function Navigation() {
             >
               <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-primary-500/60 shadow-lg group-hover:scale-105 transition-transform">
                 <Image
-                  src="/images/jackie-liang-headshot.jpg"
+                  src={assetPath('/images/jackie-liang-headshot.jpg')}
                   alt="Jackie Liang headshot"
                   fill
                   className="object-cover"
