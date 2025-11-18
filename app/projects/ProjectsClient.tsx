@@ -292,7 +292,7 @@ export default function ProjectsClient({ initialProjects }: ProjectsClientProps)
                   )}
                   {project.experienceLink && (
                     <a
-                      href={project.experienceLink.href}
+                      href={assetPath(project.experienceLink.href)}
                       className="flex-1 min-w-[160px] flex items-center justify-center px-4 py-2.5 bg-white/80 dark:bg-slate-900/70 backdrop-blur-sm text-primary-700 dark:text-primary-300 rounded-xl border border-primary-200/60 dark:border-primary-700/60 hover:bg-white dark:hover:bg-slate-900 transition-all text-sm font-semibold leading-tight"
                     >
                       {project.experienceLink.label}
@@ -515,7 +515,7 @@ function ProjectModal({
             )}
                 {project.experienceLink && (
                   <a
-                    href={project.experienceLink.href}
+                    href={assetPath(project.experienceLink.href)}
                     className="flex-1 flex items-center justify-center px-6 py-3 bg-primary-50 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-lg border border-primary-200 dark:border-primary-700 hover:bg-primary-100 dark:hover:bg-primary-900/50 transition-colors font-medium leading-tight"
                   >
                     {project.experienceLink.label}
