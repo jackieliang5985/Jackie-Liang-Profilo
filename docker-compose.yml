@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_GITHUB_USERNAME=${NEXT_PUBLIC_GITHUB_USERNAME}
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+    restart: unless-stopped
+
