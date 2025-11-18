@@ -11,5 +11,7 @@ export const excludedRepos: string[] = [
   'property-tax-appeal',
   'pathwayr-landing',
   'Project1',
+  'Jackie-Liang-Profilo',
+  'Profilo',
 ]
 
