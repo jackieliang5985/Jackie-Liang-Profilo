@@ -18,6 +18,9 @@ export interface GitHubRepo {
   topics: string[]
   default_branch: string
   private: boolean
+  fork?: boolean
+  archived?: boolean
+  isContributed?: boolean
   owner: {
     login: string
   }
