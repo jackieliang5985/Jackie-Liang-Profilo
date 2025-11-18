@@ -254,6 +254,7 @@ export default function ProjectsClient({ initialProjects }: ProjectsClientProps)
                     <a
                       href="/contact"
                       className="group/btn flex-1 flex items-center justify-center px-4 py-2.5 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-xl hover:from-primary-700 hover:to-primary-800 transition-all text-sm font-semibold cursor-pointer shadow-md shadow-primary-500/20 hover:shadow-lg hover:shadow-primary-500/30 leading-tight"
+                      style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                       title="Contact me to discuss this project"
                     >
                       Contact to Discuss
@@ -478,6 +479,7 @@ function ProjectModal({
                 href="/contact"
                 onClick={() => onClose()}
                 className="flex-1 flex items-center justify-center px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors font-medium leading-tight"
+                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
               >
                 Contact to Discuss
               </a>
