@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const isStaticExport = process.env.NEXT_EXPORT === 'true'
 
-const repoName = 'Profilo'
+const repoName = 'Jackie-Liang-Profilo'
 
 const nextConfig = {
   reactStrictMode: true,
