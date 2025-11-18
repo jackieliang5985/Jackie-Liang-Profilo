@@ -253,7 +253,7 @@ export default function ProjectsClient({ initialProjects }: ProjectsClientProps)
                   ) ? (
                     <a
                       href="/contact"
-                      className="group/btn flex-1 flex items-center justify-center px-4 py-2.5 min-h-[2.75rem] bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-xl hover:from-primary-700 hover:to-primary-800 transition-all text-sm font-semibold cursor-pointer shadow-md shadow-primary-500/20 hover:shadow-lg hover:shadow-primary-500/30"
+                      className="group/btn flex-1 flex items-center justify-center px-4 py-2.5 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-xl hover:from-primary-700 hover:to-primary-800 transition-all text-sm font-semibold cursor-pointer shadow-md shadow-primary-500/20 hover:shadow-lg hover:shadow-primary-500/30 leading-tight"
                       title="Contact me to discuss this project"
                     >
                       Contact to Discuss
@@ -263,7 +263,7 @@ export default function ProjectsClient({ initialProjects }: ProjectsClientProps)
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group/btn flex-1 text-center px-4 py-2.5 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-xl hover:from-primary-700 hover:to-primary-800 transition-all text-sm font-semibold shadow-md shadow-primary-500/20 hover:shadow-lg hover:shadow-primary-500/30"
+                      className="group/btn flex-1 flex items-center justify-center px-4 py-2.5 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-xl hover:from-primary-700 hover:to-primary-800 transition-all text-sm font-semibold shadow-md shadow-primary-500/20 hover:shadow-lg hover:shadow-primary-500/30 leading-tight"
                       title={project.private ? 'Private repository - code is not accessible' : 'View source code on GitHub'}
                     >
                       {project.private ? 'View Details' : 'View Code'}
@@ -274,7 +274,7 @@ export default function ProjectsClient({ initialProjects }: ProjectsClientProps)
                       href={project.demoUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 text-center px-4 py-2.5 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm text-slate-700 dark:text-slate-200 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-primary-300 dark:hover:border-primary-600 hover:bg-white dark:hover:bg-slate-800 transition-all text-sm font-semibold"
+                      className="flex-1 flex items-center justify-center px-4 py-2.5 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm text-slate-700 dark:text-slate-200 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-primary-300 dark:hover:border-primary-600 hover:bg-white dark:hover:bg-slate-800 transition-all text-sm font-semibold leading-tight"
                     >
                       Live Demo
                     </a>
@@ -284,7 +284,7 @@ export default function ProjectsClient({ initialProjects }: ProjectsClientProps)
                       href={project.blogLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 text-center px-4 py-2.5 bg-white/80 dark:bg-slate-900/70 backdrop-blur-sm text-primary-700 dark:text-primary-300 rounded-xl border border-primary-200/60 dark:border-primary-700/60 hover:bg-white dark:hover:bg-slate-900 transition-all text-sm font-semibold"
+                      className="flex-1 flex items-center justify-center px-4 py-2.5 bg-white/80 dark:bg-slate-900/70 backdrop-blur-sm text-primary-700 dark:text-primary-300 rounded-xl border border-primary-200/60 dark:border-primary-700/60 hover:bg-white dark:hover:bg-slate-900 transition-all text-sm font-semibold leading-tight"
                     >
                       See Blog
                     </a>
@@ -292,7 +292,7 @@ export default function ProjectsClient({ initialProjects }: ProjectsClientProps)
                   {project.experienceLink && (
                     <a
                       href={project.experienceLink.href}
-                      className="flex-1 min-w-[160px] text-center px-4 py-2.5 bg-white/80 dark:bg-slate-900/70 backdrop-blur-sm text-primary-700 dark:text-primary-300 rounded-xl border border-primary-200/60 dark:border-primary-700/60 hover:bg-white dark:hover:bg-slate-900 transition-all text-sm font-semibold"
+                      className="flex-1 min-w-[160px] flex items-center justify-center px-4 py-2.5 bg-white/80 dark:bg-slate-900/70 backdrop-blur-sm text-primary-700 dark:text-primary-300 rounded-xl border border-primary-200/60 dark:border-primary-700/60 hover:bg-white dark:hover:bg-slate-900 transition-all text-sm font-semibold leading-tight"
                     >
                       {project.experienceLink.label}
                     </a>
@@ -477,7 +477,7 @@ function ProjectModal({
               <a
                 href="/contact"
                 onClick={() => onClose()}
-                className="flex-1 flex items-center justify-center px-6 py-3 min-h-[3rem] bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors font-medium"
+                className="flex-1 flex items-center justify-center px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors font-medium leading-tight"
               >
                 Contact to Discuss
               </a>
@@ -486,7 +486,7 @@ function ProjectModal({
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 text-center px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors font-medium"
+                className="flex-1 flex items-center justify-center px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors font-medium leading-tight"
               >
                 {project.private ? 'View Details' : 'View Code'}
               </a>
@@ -496,7 +496,7 @@ function ProjectModal({
                 href={project.demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 text-center px-6 py-3 bg-gray-200 dark:bg-slate-700 text-gray-800 dark:text-gray-200 rounded-lg hover:bg-gray-300 dark:hover:bg-slate-600 transition-colors font-medium"
+                className="flex-1 flex items-center justify-center px-6 py-3 bg-gray-200 dark:bg-slate-700 text-gray-800 dark:text-gray-200 rounded-lg hover:bg-gray-300 dark:hover:bg-slate-600 transition-colors font-medium leading-tight"
               >
                 Live Demo
               </a>
@@ -506,7 +506,7 @@ function ProjectModal({
                 href={project.blogLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 text-center px-6 py-3 bg-primary-50 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-lg border border-primary-200 dark:border-primary-700 hover:bg-primary-100 dark:hover:bg-primary-900/50 transition-colors font-medium"
+                className="flex-1 flex items-center justify-center px-6 py-3 bg-primary-50 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-lg border border-primary-200 dark:border-primary-700 hover:bg-primary-100 dark:hover:bg-primary-900/50 transition-colors font-medium leading-tight"
               >
                 See Blog
               </a>
@@ -514,7 +514,7 @@ function ProjectModal({
                 {project.experienceLink && (
                   <a
                     href={project.experienceLink.href}
-                    className="flex-1 text-center px-6 py-3 bg-primary-50 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-lg border border-primary-200 dark:border-primary-700 hover:bg-primary-100 dark:hover:bg-primary-900/50 transition-colors font-medium"
+                    className="flex-1 flex items-center justify-center px-6 py-3 bg-primary-50 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-lg border border-primary-200 dark:border-primary-700 hover:bg-primary-100 dark:hover:bg-primary-900/50 transition-colors font-medium leading-tight"
                   >
                     {project.experienceLink.label}
                   </a>
